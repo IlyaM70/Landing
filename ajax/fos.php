@@ -5,7 +5,7 @@ $message=$_POST['message'];
 $theme=$_POST['theme'];
 
 
-$to = "iliya.merkulov@mail.ru";
+$to = "";
 
 $subject = $theme;
 
@@ -26,8 +26,8 @@ $message =
 
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= "Content-type: text/html; charset=utf-8 \r\n";
-$headers .= "From:me<iliya.merkulov@mail.ru>\r\n";
-$headers .= "Reply-To: iliya.merkulov@mail.ru\r\n";
+$headers .= "From:me<>\r\n";
+$headers .= "Reply-To: \r\n";
 
 
 mail($to, $subject, $message, $headers);
@@ -51,8 +51,8 @@ else{
 
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= "Content-type: text/html; charset=utf-8 \r\n";
-$headers .= "From:me<iliya.merkulov@mail.ru>\r\n";
-$headers .= "Reply-To: iliya.merkulov@mail.ru\r\n";
+$headers .= "From:me<>\r\n";
+$headers .= "Reply-To: \r\n";
 
 
 mail($to, $subject, $message, $headers);
